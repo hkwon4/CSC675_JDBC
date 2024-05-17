@@ -22,24 +22,19 @@ public class JDBCDriver {
             System.out.println("Connection established successfully.");
 
             // Example usage
-            insertSport("Basketball", "Team Sports", "Summer", "Male");
-            updateSport(1, "Updated Sport Name");
+            insertSport("Basketball", "Team Sports", "Summer","Male");
             fetchSports();
 
             insertAthlete("John", "Doe", "Male");
-            updateAthlete(1, "Jane", "Doe");
             fetchAthletes();
 
             insertUniversity("XYZ University", "info@xyz.edu", "1234567890", "password123", "123 University St", "City", "ST", "12345");
-            updateUniversity(1, "XYZ University Updated");
             fetchUniversities();
 
             insertFaculty(1, "Doe", "John", "Male", "johndoe@xyz.edu", "password123");
-            updateFaculty(1, 1, "Doe", "Jane");
             fetchFaculty();
 
             insertUser("user@example.com", "password123", "John", "Doe");
-            updateUser(1, "user2@example.com");
             fetchUsers();
 
         } catch (SQLException e) {
